@@ -19,3 +19,4 @@ spec:
         image: us-east4-docker.pkg.dev/qwiklabs-gcp-00-e648fdcf8987/my-repository/sample-app:v1.0
         ports:
         - containerPort: 8080
+        tier: production
