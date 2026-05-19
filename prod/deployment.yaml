@@ -4,6 +4,7 @@ metadata:
   name: production-deployment
   labels:
     app: sample-app
+    tier: production
 spec:
   replicas: 1
   selector:
@@ -13,10 +14,10 @@ spec:
     metadata:
       labels:
         app: sample-app
+        tier: production
     spec:
       containers:
       - name: sample-app
         image: us-east4-docker.pkg.dev/qwiklabs-gcp-00-e648fdcf8987/my-repository/sample-app:v1.0
         ports:
         - containerPort: 8080
-        tier: production
