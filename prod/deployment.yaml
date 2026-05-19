@@ -4,7 +4,6 @@ metadata:
   name: production-deployment
   labels:
     app: sample-app
-    tier: production
 spec:
   replicas: 1
   selector:
@@ -14,7 +13,6 @@ spec:
     metadata:
       labels:
         app: sample-app
-        tier: production
     spec:
       containers:
       - name: sample-app
